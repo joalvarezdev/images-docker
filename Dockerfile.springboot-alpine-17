@@ -1,0 +1,7 @@
+FROM joalvarezdev/alpine-base:latest
+
+RUN apk add openjdk17
+
+ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk
+
+ENV PATH $JAVA_HOME/bin:$PATH
